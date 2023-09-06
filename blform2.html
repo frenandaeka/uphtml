@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Anggota</h2>
+    <h3>Silahkan Isi Dengan Benar</h3>
+    <form action="daftar_anggota.php" method="POST" onsubmit="alert('GA BISA KAN.'); return false;">
+        <table border="1" rules="all" cellpadding="5">
+            <tr>
+                <td>Nama pengguna:</td>
+                <td>
+                    <input type="text" name="nama_pengguna">
+                </td>
+            </tr>
+            <tr>
+            <td>Nama lengkap:</td>
+            <td>
+                <input type="text" name="nama_lengkap">
+            </td>
+        </tr>
+            <tr>
+                <td >TTL:</td>
+                <td>
+                    <input type="date" name="TTL">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="cek_jenis_kelamin.php" method="POST">
+                        Gender:
+                    </td>
+                <td>
+                <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+                <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+            </td>
+        </tr>
+
+    </form>
+</td>
+</tr>
+<tr>
+     <tr>
+     <td>Kata sandi:</td>
+     <td>
+        <input type="password" name="kata_sandi">
+     </td>
+     </tr>
+     <td>Email:</td>
+     <td>
+        <input type="email" name="email">
+     </td>
+     </tr>
+    </tr>
+    <td>Konfirmasi kata sandi:</td>
+    <td>
+        <input type="text" name="Konfirmasi kata_sandi">
+    </td>
+</tr>
+</tr>
+<td>Alamat:</td>
+<td>
+    <textarea cols="20" rows="5" id="alamat" required></textarea>
+</td>
+</tr>
+<td>
+    <div>
+        <label for="Negara">Anda tinggal negara:</label>
+    <br>
+    <select name="Negara" id="Negara">
+        <option value="Indonesia">Indonesia</option>
+        <option value="India">India</option>
+        <option value="Korea">Korea</option>
+        
+    </td>
+</select>
+<td>
+    <div>
+        <label for="Provinsi">Anda tinggal provinsi:</label>
+    <br>
+    <select name="Provinsi" id="Provinsi">
+        <option value="Jawa Tengah">Jawa Tengah</option>
+        <option value="Jawa Barat">Jawa Barat</option>
+        <option value="Jawa Timur">Jawa Timur</option>
+        
+    </td>
+</select>
+</div>
+</td>
+</tr>
+<tr>
+    <td colspan="2" align="center">
+        <input type="checkbox" Saya setuju dengan peraturan privasi>
+    </td>
+    </tr>
+    <td
+    colspan="2" align="left">
+    <input type="submit" name="submit" value="Batal">
+    <input type="submit" name="submit" value="Kirim">
+    </td>
+</tr>
+</body>
+</html>
